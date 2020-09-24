@@ -1,0 +1,74 @@
+@import "./colors.scss";
+@import "bulma/bulma";
+
+$card-transition: all ease-in 250ms;
+$card-animation: fadeIn 0.5s ease-out forwards;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $app-background;
+}
+.container {
+}
+.logo {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+@media only screen and (max-width: 768px) {
+  .logo h3 {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .logo h3 {
+    font-size: 6.4rem;
+  }
+}
+.logo highlight {
+  color: $app-primary;
+}
+.card {
+  padding: 1rem;
+  border-radius: 6px;
+  height: 530px;
+  min-height: 530px;
+  min-width: 280px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.15);
+  transition: $card-transition;
+  --webkit-transition: $card-transition;
+  animation: $card-animation;
+  --webkit-animation: $card-animation;
+}
+.card:hover {
+  box-shadow: 0 2px 50px 0 rgba(0,0,0,.25);
+}
+.card-image img {
+  border-radius: 4px;
+}
+.image.is-256x256 {
+  height: 256px;
+  width: 256px;
+}
+.card .content {
+  font-size: 12px;
+  line-height: 18px;
+}
+.card .card-footer {
+  margin-top: 10px;
+  min-height: 40px;
+  max-height: 40px;
+}
+.grid {
+  margin-top: 11.7rem;
+  display: grid;
+  grid-gap: 30px;
+  justify-content: center;
+  padding: 0 7rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+}
