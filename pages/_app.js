@@ -51,9 +51,9 @@ function MyApp({ Component, pageProps }) {
         openGraph={{
           type:'website',
           locale: 'en_US',
-          url: {url},
-          title: {title},
-          description:{description},
+          url: url,
+          title: title,
+          description:description,
           images:[
             {
               url:'/og.png',
