@@ -1,7 +1,8 @@
 // next.config.js
 const withMdxEnhanced = require("next-mdx-enhanced");
-const withOffline = require("next-offline");
 const withPlugins = require("next-compose-plugins");
+const withPWA = require('next-pwa')
+
 const mdxConfig = {
   layoutPath: "layouts",
   defaultLayout: true,
@@ -16,4 +17,8 @@ const mdxConfig = {
   reExportDataFetching: false,
 };
 
-module.exports = withPlugins([[withMdxEnhanced(mdxConfig)], [withOffline]]);
+module.exports = withPlugins([[withMdxEnhanced(mdxConfig)],[withPWA,{
+  pwa:{
+    dest: 'public'
+  }
+}]]);
