@@ -1,14 +1,22 @@
 import styles from "./cardgrid.module.scss";
 import Card from "./card";
-import devs from "../data/developers.json";
+import { frontMatter as devs } from "../pages/devs/*.mdx";
+import Link from "next/link";
 export default function CardGrid() {
-  devs.length = 50;
-  devs.fill(devs[0]);
   return (
     <>
       {devs.map((dev, idx) => {
-        return <Card key={idx.toString()} data={dev}></Card>;
+        return (
+          <Link key={idx.toString()} href={formatPath(dev.__resourcePath)}>
+            <a>
+              <Card data={dev}></Card>
+            </a>
+          </Link>
+        );
       })}
     </>
   );
+}
+function formatPath(p) {
+  return p.replace(/\.mdx$/, "");
 }

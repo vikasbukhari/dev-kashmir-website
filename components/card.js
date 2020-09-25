@@ -19,8 +19,8 @@ export default function Card(props) {
           </div>
           <div className="content">
             <div className={styles.tags}>
-              {data.tags.map((tag) => (
-                <span className={`tag is-rounded ${styles.tag}`}>{tag}</span>
+              {data.tags.map((tag,idx) => (
+                <span key={idx.toString()} className={`tag is-rounded ${styles.tag}`}>{tag}</span>
               ))}
             </div>
             {data.description}
@@ -29,9 +29,9 @@ export default function Card(props) {
       </div>
       <footer className="card-footer">
         <div className={styles.links}>
-          {data.links.map((link) => {
+          {data.links.map((link,idx) => {
             return (
-              <a href={link.url}>
+              <a key={idx.toString()} href={link.url}>
                 <FontAwesomeIcon icon={["fab", link.name]} size="2x" />
               </a>
             );

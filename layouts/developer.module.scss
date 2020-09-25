@@ -1,0 +1,38 @@
+@import "../styles/colors.scss";
+.header {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1216px) {
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.tags {
+  margin-bottom: 5px;
+}
+.tags .tag {
+  padding: 15px;
+  margin: 5px 5px 5px 0;
+}
+.links {
+  margin-top: 5px;
+  overflow: hidden;
+}
+.links a {
+  margin: 5px 5px 5px 0;
+  color: inherit;
+}
+.links a:hover {
+    color: $app-primary;
+}
+.description {
+  width: fit-content;
+}
+.content {
+    font-size: 1.5rem;
+}
