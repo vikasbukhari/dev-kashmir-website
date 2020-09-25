@@ -31,7 +31,7 @@ export default function Card(props) {
         <div className={styles.links}>
           {data.links.map((link,idx) => {
             return (
-              <a key={idx.toString()} href={link.url}>
+              <a alt={link.name} key={idx.toString()} href={link.url}>
                 <FontAwesomeIcon icon={["fab", link.name]} size="2x" />
                 <FontAwesomeIcon icon={link.name} size="2x" />
 

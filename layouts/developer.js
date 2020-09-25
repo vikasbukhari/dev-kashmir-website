@@ -33,8 +33,9 @@ export default function Index({ children, frontMatter }) {
               <div className={styles.links}>
                 {frontMatter.links.map((link, idx) => {
                   return (
-                    <a key={idx.toString()} href={link.url}>
+                    <a alt={link.name} key={idx.toString()} href={link.url}>
                       <FontAwesomeIcon icon={["fab", link.name]} size="2x" />
+                      <FontAwesomeIcon icon={link.name} size="2x" />
                     </a>
                   );
                 })}
