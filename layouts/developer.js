@@ -43,7 +43,7 @@ export default function Index({ children, frontMatter }) {
           </div>
         </div>
       </div>
-      <div className={`section has-text-justified ${styles.content}`}>
+      <div className={`section has-text-justified content`}>
         <div className="container">{children}</div>
       </div>
     </>

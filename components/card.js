@@ -33,6 +33,8 @@ export default function Card(props) {
             return (
               <a key={idx.toString()} href={link.url}>
                 <FontAwesomeIcon icon={["fab", link.name]} size="2x" />
+                <FontAwesomeIcon icon={link.name} size="2x" />
+
               </a>
             );
           })}

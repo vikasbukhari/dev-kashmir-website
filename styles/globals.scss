@@ -24,7 +24,7 @@ body {
     font-size: 6.4rem;
   }
 }
-.logo highlight {
+highlight {
   color: $app-primary;
 }
 .card {
@@ -69,4 +69,11 @@ body {
   justify-content: center;
   padding: 0 7rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+}
+.content {
+  font-size: 1.5rem;
+}
+.button:hover{
+  background-color: $app-primary-dark;
+  border-color: $app-primary-dark;
 }

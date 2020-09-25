@@ -1,7 +1,10 @@
 import { useState } from "react";
-
+import { useRouter } from 'next/router'
+import Link from "next/link";
+import styles from "./navbar.module.scss";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
   return (
     <nav
       className={"navbar is-spaced"}
@@ -30,8 +33,8 @@ export default function Navbar() {
         className={`navbar-menu ${menuOpen ? "is-active" : ""}`}
       >
         <div className={"navbar-end"}>
-          <a className={"navbar-item"}>About</a>
-          <a className={"navbar-item"}>Nominate</a>
+          {/* <Link href="/about"><a className={`navbar-item ${router.pathname === '/about' ? styles.active: ''}`}>About</a></Link> */}
+          <Link href="/nominate"><a className={`navbar-item ${router.pathname === '/nominate' ? styles.active: ''}`}>Nominate</a></Link>
         </div>
       </div>
     </nav>
