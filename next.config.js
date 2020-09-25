@@ -1,6 +1,8 @@
 // next.config.js
 const withMdxEnhanced = require("next-mdx-enhanced");
-module.exports = withMdxEnhanced({
+const withOffline = require("next-offline");
+const withPlugins = require("next-compose-plugins");
+const mdxConfig = {
   layoutPath: "layouts",
   defaultLayout: true,
   fileExtensions: ["mdx"],
@@ -12,4 +14,6 @@ module.exports = withMdxEnhanced({
     phase: "prebuild|loader|both",
   },
   reExportDataFetching: false,
-})(/* your normal nextjs config */);
+};
+
+module.exports = withPlugins([[withMdxEnhanced(mdxConfig)], [withOffline]]);
