@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="661.98749mm"
+   height="372.53333mm"
+   viewBox="0 0 661.98749 372.53333"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="og.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:export-filename="/home/haideralipunjabi/Github/dev-kashmir/public/og.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="1309.2229"
+     inkscape:cy="771.39656"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(217.84985,263.47653)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.264583px;stop-color:#000000"
+       id="rect963"
+       width="661.98749"
+       height="372.53333"
+       x="-217.84985"
+       y="-263.47653" />
+    <rect
+       style="fill:#111111;fill-opacity:1;stroke-width:0.264583px;stop-color:#000000"
+       id="rect965"
+       width="595.84167"
+       height="306.38751"
+       x="-184.77692"
+       y="-230.40363" />
+    <g
+       id="g1616"
+       transform="translate(-32.164809,0.42047955)">
+      <text
+         xml:space="preserve"
+         style="font-size:78.5243px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.196311"
+         x="205.94942"
+         y="-89.685753"
+         id="text986"><tspan
+           sodipodi:role="line"
+           x="205.94942"
+           y="-89.685753"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.5243px;font-family:'Source Code Pro for Powerline';-inkscape-font-specification:'Source Code Pro for Powerline';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.196311"
+           id="tspan988">Kashmiri</tspan><tspan
+           sodipodi:role="line"
+           x="205.94942"
+           y="-10.293834"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.5243px;font-family:'Source Code Pro for Powerline';-inkscape-font-specification:'Source Code Pro for Powerline';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.196311"
+           id="tspan1596">Devs</tspan></text>
+      <g
+         id="g1592"
+         transform="matrix(1.4394732,0,0,1.4394732,-836.21259,20.747694)">
+        <rect
+           style="fill:#000000;stroke-width:0.264583px;stop-color:#000000"
+           id="rect841"
+           width="64"
+           height="64"
+           x="519.02307"
+           y="-100.34309" />
+        <text
+           xml:space="preserve"
+           style="font-size:38.1px;line-height:0;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#029646;fill-opacity:1;stroke-width:0.264583"
+           x="527.19897"
+           y="-55.846294"
+           id="text835"><tspan
+             sodipodi:role="line"
+             id="tspan833"
+             x="527.19897"
+             y="-55.846294"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.1px;font-family:'Source Code Pro for Powerline';-inkscape-font-specification:'Source Code Pro for Powerline';fill:#029646;fill-opacity:1;stroke-width:0.264583">KD</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:19.05px;line-height:0;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="5.7411523"
+       y="60.111641"
+       id="text1435"><tspan
+         sodipodi:role="line"
+         id="tspan1433"
+         x="5.7411523"
+         y="60.111641"
+         style="font-size:19.05px;fill:#ffffff;stroke-width:0.264583">kashmiridevs.vercel.app</tspan></text>
+  </g>
+</svg>

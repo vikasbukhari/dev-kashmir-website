@@ -1,10 +1,15 @@
 import Navbar from "../components/navbar";
 import styles from "./developer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NextSeo } from 'next-seo';
 
 export default function Index({ children, frontMatter }) {
   return (
     <>
+      <NextSeo
+      title={`${frontMatter.name} - Kashmiri Devs`}
+      description={frontMatter.description}
+      />
       <Navbar />
       <div className="section">
         <div className="container">

@@ -13,7 +13,7 @@ export default function Navbar() {
     >
       <div className={"navbar-brand"}>
         <a className={"navbar-item"} href="/">
-          <h1 className={"title"}>kashmiri.dev</h1>
+          <h1 className={"title"}>Kashmiri Devs</h1>
         </a>
         <a
           role="button"

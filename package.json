@@ -21,6 +21,7 @@
     "next-compose-plugins": "^2.2.0",
     "next-mdx-enhanced": "^4.0.0",
     "next-pwa": "^3.1.4",
+    "next-seo": "^4.9.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },

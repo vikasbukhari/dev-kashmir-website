@@ -1,8 +1,17 @@
 import Navbar from "../components/navbar";
-import Link from "next/link";
+import { NextSeo } from 'next-seo';
+
 export default function Nominate() {
   return (
     <>
+      <NextSeo
+      title="Nominate - Kashmiri Devs"
+      canonical="https://kashmiridevs.vercel.app/nominate"
+      openGraph={{
+        title: "Nominate - Kashmiri Devs",
+        url:   "https://kashmiridevs.vercel.app/nominate"
+      }}
+      />
       <Navbar />
       <div className="section">
         <div className="container">
