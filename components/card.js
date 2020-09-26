@@ -18,7 +18,7 @@ export default function Card(props) {
                     alt={data.name}
                     type="image/webp"
                   />
-                  <img
+                  <img className="image is-256x256"
                     src={require(`../public/images/devs/${
                       data.image || "user-placeholder.png"
                     }`)}
