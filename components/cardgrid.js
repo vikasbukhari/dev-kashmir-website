@@ -3,6 +3,7 @@ import Card from "./card";
 import { frontMatter as devs } from "../pages/devs/*.mdx";
 import Link from "next/link";
 export default function CardGrid() {
+  console.log(devs);
   return (
     <>
       {devs.map((dev, idx) => {
