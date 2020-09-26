@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
               alt:'OG Image'
             }
           ],
-          site_name: {title}
+          site_name: title
         }}
         
       />
