@@ -7,10 +7,10 @@ export default function Nominate() {
     <>
       <NextSeo
         title="Nominate - Kashmiri Devs"
-        canonical="https://kashmiridevs.vercel.app/nominate"
+        canonical="https://kashmiri.dev/nominate"
         openGraph={{
           title: "Nominate - Kashmiri Devs",
-          url: "https://kashmiridevs.vercel.app/nominate",
+          url: "https://kashmiri.dev/nominate",
         }}
       />
       <Navbar />

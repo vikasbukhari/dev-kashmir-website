@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   library.add(fab, fas);
   const title = "Kashmiri Devs"
   const description = "The directory of Kashmiris thriving in the field of programming."
-  const url = "https://kashmiridevs.vercel.app/"
+  const url = "https://kashmiri.dev/"
   return (
     <>
       <Head>
