@@ -3,3 +3,10 @@
 .active {
     background-color: $app-primary;
 }
+
+.link {
+    color: white;
+}
+.link:hover {
+    color: $app-primary;
+}

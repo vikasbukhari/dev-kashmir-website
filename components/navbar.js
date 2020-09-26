@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "./navbar.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
@@ -33,8 +34,38 @@ export default function Navbar() {
         className={`navbar-menu ${menuOpen ? "is-active" : ""}`}
       >
         <div className={"navbar-end"}>
-          {/* <Link href="/about"><a className={`navbar-item ${router.pathname === '/about' ? styles.active: ''}`}>About</a></Link> */}
-          <Link href="/nominate"><a className={`navbar-item ${router.pathname === '/nominate' ? styles.active: ''}`}>Nominate</a></Link>
+          <span className="navbar-item">
+            <a
+              className={styles.link}
+              href="https://twitter.com/kashmiridev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={["fab", "twitter"]} />
+              <span className="is-hidden-desktop	">
+                {" "}
+                Kashmiri Devs on Twitter
+              </span>
+            </a>
+          </span>
+          <Link href="/about">
+            <a
+              className={`navbar-item ${
+                router.pathname === "/about" ? styles.active : ""
+              }`}
+            >
+              About
+            </a>
+          </Link>
+          <Link href="/nominate">
+            <a
+              className={`navbar-item ${
+                router.pathname === "/nominate" ? styles.active : ""
+              }`}
+            >
+              Nominate
+            </a>
+          </Link>
         </div>
       </div>
     </nav>

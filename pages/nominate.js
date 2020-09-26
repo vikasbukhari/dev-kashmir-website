@@ -30,12 +30,14 @@ export default function Nominate() {
             <a
               href="https://forms.gle/a8eWcAMFWxyqDKG9A"
               target="_blank"
+              rel="noopener noreferrer"
               className="button is-large">
               Submit a Form
             </a>
             <a
               href="https://github.com/dev-kashmir/dev-kashmir-website"
               target="_blank"
+              rel="noopener noreferrer"
               className="button is-large is-dark"
             >
               <FontAwesomeIcon className="fa-icon" icon={["fab", "github"]} size="lg" />

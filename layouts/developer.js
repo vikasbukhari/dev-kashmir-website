@@ -54,6 +54,7 @@ export default function Index({ children, frontMatter }) {
                       key={idx.toString()}
                       href={link.url}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FontAwesomeIcon icon={["fab", link.name]} size="2x" />
                       <FontAwesomeIcon icon={link.name} size="2x" />
