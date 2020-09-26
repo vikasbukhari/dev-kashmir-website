@@ -25,7 +25,7 @@ export default function Index({ children, frontMatter }) {
                   type="image/webp"
                 />
                 <img
-                  className="is-rounded"
+                  className="is-rounded image is-256x256"
                   src={require(`../public/images/devs/${
                     frontMatter.image || "user-placeholder.png"
                   }`)}
