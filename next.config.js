@@ -1,7 +1,8 @@
 // next.config.js
 const withMdxEnhanced = require("next-mdx-enhanced");
 const withPlugins = require("next-compose-plugins");
-const withPWA = require('next-pwa')
+const withPWA = require("next-pwa");
+const optimizedImages = require("next-optimized-images");
 
 const mdxConfig = {
   layoutPath: "layouts",
@@ -17,8 +18,20 @@ const mdxConfig = {
   reExportDataFetching: false,
 };
 
-module.exports = withPlugins([[withMdxEnhanced(mdxConfig)],[withPWA,{
-  pwa:{
-    dest: 'public'
-  }
-}]]);
+module.exports = withPlugins([
+  [withMdxEnhanced(mdxConfig)],
+  [
+    withPWA,
+    {
+      pwa: {
+        dest: "public",
+      },
+    },
+  ],
+  [
+    optimizedImages,
+    {
+      optimizedImagesInDev: true,
+    },
+  ],
+]);

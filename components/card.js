@@ -7,7 +7,7 @@ export default function Card(props) {
       <div className={styles.card_inner}>
         <div className="card-image">
           <figure className="image">
-            <img src={data.image || `/user-placeholder.png`} alt={data.name} />
+            <img src={require(`../public/images/devs/${data.image||'user-placeholder.png'}?webp`)} alt={data.name} />
           </figure>
         </div>
         <div className="card-content">
