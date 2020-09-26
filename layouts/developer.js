@@ -15,11 +15,19 @@ export default function Index({ children, frontMatter }) {
         <div className="container">
           <div className={styles.header}>
             <figure className="image is-256x256">
-              <img
-                className="is-rounded"
-                src={frontMatter.image || `/user-placeholder.png`}
-                alt=""
+            <picture>
+              <source
+                srcSet={require(`../public/images/devs/${
+                  frontMatter.image || "user-placeholder.png"
+                }?webp`)}
+                alt={frontMatter.name}
+                type="image/webp"
               />
+              <img className="is-rounded" src={require(`../public/images/devs/${
+                frontMatter.image || "user-placeholder.png"
+              }`)}
+              alt={frontMatter.name} />
+            </picture>
             </figure>
             <div>
               <h2 className="title is-2">{frontMatter.name}</h2>

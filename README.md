@@ -10,14 +10,14 @@ The easiest way to send a nomination is to use [this Google Form](https://forms.
 
 ### Send a PR
 
-You can also send a PR to this repo, and add a file your nomination in the `/pages/devs/` folder.
+You can also send a PR to this repo, and add a file your nomination in the `/pages/devs/` folder. Save your profile image in `/public/images/devs/` folder. Keep the filename same for both the `.mdx` and image files.
 
 Use the following template
 
 ```yaml
 ---
 name: <Your Name>
-image: <URL to Your Image>
+image: <filename of your image, stored in /public/images/devs>
 address: < Your Address>
 tags: []    <Array of Tags>
 description: <Description>

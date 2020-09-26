@@ -7,7 +7,19 @@ export default function Card(props) {
       <div className={styles.card_inner}>
         <div className="card-image">
           <figure className="image">
-            <img src={require(`../public/images/devs/${data.image||'user-placeholder.png'}?webp`)} alt={data.name} />
+            <picture>
+              <source
+                srcSet={require(`../public/images/devs/${
+                  data.image || "user-placeholder.png"
+                }?webp`)}
+                alt={data.name}
+                type="image/webp"
+              />
+              <img src={require(`../public/images/devs/${
+                data.image || "user-placeholder.png"
+              }`)}
+              alt={data.name} />
+            </picture>
           </figure>
         </div>
         <div className="card-content">
@@ -19,8 +31,13 @@ export default function Card(props) {
           </div>
           <div className="content">
             <div className={styles.tags}>
-              {data.tags.map((tag,idx) => (
-                <span key={idx.toString()} className={`tag is-rounded ${styles.tag}`}>{tag}</span>
+              {data.tags.map((tag, idx) => (
+                <span
+                  key={idx.toString()}
+                  className={`tag is-rounded ${styles.tag}`}
+                >
+                  {tag}
+                </span>
               ))}
             </div>
             {data.description}
@@ -29,12 +46,11 @@ export default function Card(props) {
       </div>
       <footer className="card-footer">
         <div className={styles.links}>
-          {data.links.map((link,idx) => {
+          {data.links.map((link, idx) => {
             return (
               <a alt={link.name} key={idx.toString()} href={link.url}>
                 <FontAwesomeIcon icon={["fab", link.name]} size="2x" />
                 <FontAwesomeIcon icon={link.name} size="2x" />
-
               </a>
             );
           })}
