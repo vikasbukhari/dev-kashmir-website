@@ -44,7 +44,7 @@ highlight {
   --webkit-animation: $card-animation;
 }
 .card:hover {
-  box-shadow: 0 2px 50px 0 rgba(0,0,0,.25);
+  box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.25);
 }
 .card-image img {
   border-radius: 4px;
@@ -73,11 +73,14 @@ highlight {
 .content {
   font-size: 1.5rem;
 }
-.button:hover{
+.button:hover {
   background-color: $app-primary-dark;
   border-color: $app-primary-dark;
 }
 
 .fa-icon {
   margin: 5px;
+}
+.footer {
+  margin: 10rem 0 1rem;
 }

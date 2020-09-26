@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import { NextSeo } from "next-seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "../components/footer";
 
 export default function Nominate() {
   return (
@@ -43,6 +44,7 @@ export default function Nominate() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import styles from "./developer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NextSeo } from "next-seo";
+import Footer from "../components/footer";
 
 export default function Index({ children, frontMatter }) {
   return (
@@ -15,19 +16,22 @@ export default function Index({ children, frontMatter }) {
         <div className="container">
           <div className={styles.header}>
             <figure className="image is-256x256">
-            <picture>
-              <source
-                srcSet={require(`../public/images/devs/${
-                  frontMatter.image || "user-placeholder.png"
-                }?webp`)}
-                alt={frontMatter.name}
-                type="image/webp"
-              />
-              <img className="is-rounded" src={require(`../public/images/devs/${
-                frontMatter.image || "user-placeholder.png"
-              }`)}
-              alt={frontMatter.name} />
-            </picture>
+              <picture>
+                <source
+                  srcSet={require(`../public/images/devs/${
+                    frontMatter.image || "user-placeholder.png"
+                  }?webp`)}
+                  alt={frontMatter.name}
+                  type="image/webp"
+                />
+                <img
+                  className="is-rounded"
+                  src={require(`../public/images/devs/${
+                    frontMatter.image || "user-placeholder.png"
+                  }`)}
+                  alt={frontMatter.name}
+                />
+              </picture>
             </figure>
             <div>
               <h2 className="title is-2">{frontMatter.name}</h2>
@@ -45,7 +49,12 @@ export default function Index({ children, frontMatter }) {
               <div className={styles.links}>
                 {frontMatter.links.map((link, idx) => {
                   return (
-                    <a alt={link.name} key={idx.toString()} href={link.url} target="_blank">
+                    <a
+                      alt={link.name}
+                      key={idx.toString()}
+                      href={link.url}
+                      target="_blank"
+                    >
                       <FontAwesomeIcon icon={["fab", link.name]} size="2x" />
                       <FontAwesomeIcon icon={link.name} size="2x" />
                     </a>
@@ -64,6 +73,7 @@ export default function Index({ children, frontMatter }) {
       <div className={`section has-text-justified content`}>
         <div className="container">{children}</div>
       </div>
+      <Footer />
     </>
   );
 }
