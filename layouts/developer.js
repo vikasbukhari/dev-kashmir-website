@@ -1,21 +1,25 @@
 import Navbar from "../components/navbar";
 import styles from "./developer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
 
 export default function Index({ children, frontMatter }) {
   return (
     <>
       <NextSeo
-      title={`${frontMatter.name} - Kashmiri Devs`}
-      description={frontMatter.description}
+        title={`${frontMatter.name} - Kashmiri Devs`}
+        description={frontMatter.description}
       />
       <Navbar />
       <div className="section">
         <div className="container">
           <div className={styles.header}>
             <figure className="image is-256x256">
-              <img className="is-rounded" src={frontMatter.image} alt="" />
+              <img
+                className="is-rounded"
+                src={frontMatter.image || `/user-placeholder.png`}
+                alt=""
+              />
             </figure>
             <div>
               <h2 className="title is-2">{frontMatter.name}</h2>
