@@ -33,14 +33,15 @@ export default function Index({ children, frontMatter }) {
                 />
               </picture>
             </figure>
-            <div>
-              <h2 className="title is-2">{frontMatter.name}</h2>
-              <h4 className="subtitle is-4">{frontMatter.address}</h4>
+                  
+            <div className={styles.developerPage}>
+              <h2 className="title">{frontMatter.name}</h2>
+              <h4 className="subtitle">{frontMatter.address}</h4>
               <div className={styles.tags}>
                 {frontMatter.tags.map((tag, idx) => (
                   <span
                     key={idx.toString()}
-                    className={`tag is-rounded ${styles.tag}`}
+                    className={`tag is-rounded is-success ${styles.tag}`}
                   >
                     {tag}
                   </span>
@@ -64,16 +65,27 @@ export default function Index({ children, frontMatter }) {
               </div>
             </div>
             <div
-              className={`has-text-justified is-size-4 ${styles.description}`}
+              className={`text-desc is-size-5 is-primary ${styles.description}`}
             >
               {frontMatter.description}
             </div>
           </div>
+
         </div>
       </div>
-      <div className={`section has-text-justified content`}>
-        <div className="container">{children}</div>
+      <div className= {styles.devQA}>
+
+       <div className={`section content is-size-6`}>
+         
+        <div className="container">
+          
+          {children}
+          
+          </div>
+       
       </div>
+      </div>
+      
       <Footer />
     </>
   );
