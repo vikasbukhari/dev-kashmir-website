@@ -1,7 +1,5 @@
 @import "../styles/colors.scss";
 
-//font-family: 'Roboto', sans-serif;
-
 .header {
   margin-top: 4rem;
   display: flex;
@@ -21,6 +19,7 @@
 .tags .tag {
   padding: 15px;
   margin: 5px 5px 5px 0;
+  background-color: $app-primary;
 }
 .links {
   margin-top: 5px;
@@ -35,18 +34,18 @@
 }
 .description {
   width: fit-content;
-  font-family: 'Roboto', sans-serif;
+  font-family:Roboto;
   font-weight: 300;
   font-size: 16px;
 }
 
 .devQA{
-  font-family: 'Roboto', sans-serif;
+  font-family:Roboto;
   
 }
 
 .devQA h2{
-  color: #48c774;
+  color: $app-primary;
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -67,7 +66,7 @@
 }
 
 .developerPage{
-  font-family: 'Roboto', sans-serif;
+  font-family:  Roboto;
 
 }
 
