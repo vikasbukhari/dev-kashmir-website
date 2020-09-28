@@ -1,4 +1,7 @@
 @import "../styles/colors.scss";
+
+//font-family: 'Roboto', sans-serif;
+
 .header {
   margin-top: 4rem;
   display: flex;
@@ -32,4 +35,48 @@
 }
 .description {
   width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.devQA{
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.devQA h2{
+  color: #48c774;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.devQA p{
+  color: white;
+  
+}
+
+.devQA p::after{
+  content: "\A \A";
+  white-space: pre;
+}
+
+.devQA ul::after{
+  content: "\A";
+  white-space: pre;
+}
+
+.developerPage{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.developerPage h2{
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  font-size:2.0rem;
+}
+
+.developerPage h4{
+  font-weight:300;
 }
