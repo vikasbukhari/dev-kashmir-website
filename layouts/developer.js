@@ -41,7 +41,7 @@ export default function Index({ children, frontMatter }) {
                 {frontMatter.tags.map((tag, idx) => (
                   <span
                     key={idx.toString()}
-                    className={`tag is-rounded is-success ${styles.tag}`}
+                    className={`tag is-rounded ${styles.tag}`}
                   >
                     {tag}
                   </span>
