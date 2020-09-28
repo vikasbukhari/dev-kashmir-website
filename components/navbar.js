@@ -13,8 +13,8 @@ export default function Navbar() {
       aria-label="main navigation"
     >
       <div className={"navbar-brand"}>
-        <a className={"navbar-item"} href="/">
-          <h1 className={"title"}>Kashmiri Devs</h1>
+        <a className={`"navbar-item" ${styles.siteName}`} href="/">
+          <h3 className={"title"}>Kashmiri.<span className="has-background-success-dark">dev</span></h3>
         </a>
         <a
           role="button"
